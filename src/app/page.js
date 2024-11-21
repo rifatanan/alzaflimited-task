@@ -3,15 +3,15 @@ import NavBar from './components/NavBar';
 import Hero from './components/Hero';
 
 const page = async () => {
-    const value = await fetch(
+    const FetchData = await fetch(
         'https://api.shope.com.bd/api/v1/public/hero-categories',
     );
-    const valueResponse = await value.json();
+    const FetchDataResponse = await FetchData.json();
 
     return (
         <div className="w-100%">
             <NavBar />
-            <Hero value={valueResponse} />
+            <Hero data={FetchDataResponse} />
         </div>
     );
 };

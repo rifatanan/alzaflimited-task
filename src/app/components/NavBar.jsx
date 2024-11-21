@@ -32,11 +32,11 @@ const NavBar = () => {
 		</div>
 		<div className='flex justify-center'>
 			<div className='bg-[#FFFF] w-[65%] flex justify-between items-center h-[70px] gap-[20px]'>
-				<Link href='' className=''>
+				<Link href='/'>
 					<Image src={logo} height={37.88} width={129} alt='logo'></Image>
 				</Link>
-				<div className='bg-[#EFF0F5] w-full h-[44px] rounded-l-[10px] flex justify-end'>
-					<input type="text"  className='w-full bg-[#EFF0F5] focus:outline-none rounded-l-[10px] pl-[10px]' placeholder='Search Product'/>
+				<div className='bg-[#EFF0F5] w-full h-[44px] rounded-[10px] flex justify-end'>
+					<input type="text"  className='w-full bg-[#EFF0F5] focus:outline-none rounded-[10px] pl-[10px]' placeholder='Search Product'/>
 					<button className='bg-[#F97316] w-[47px] h-[44px] rounded-[10px] flex justify-center items-center'>
 						<Image src={search} height={17.46} width={17.46} alt='logo'></Image>
 					</button>
